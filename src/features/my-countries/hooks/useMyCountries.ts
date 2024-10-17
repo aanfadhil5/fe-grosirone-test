@@ -8,7 +8,7 @@ const useMyCountries = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const myCountries = useSelector((state: any) => state.myCountries.countries);
 
-  const addToMyCountries = (country: Country[]) => {
+  const addToMyCountries = (country: Country) => {
     if (Math.random() < 0.5) {
       toast.error(
         "You failed to add countries to your list. Please try again later"

@@ -131,7 +131,7 @@ export const CountryRoute = () => {
               <AlertDialogCancel>Cancel</AlertDialogCancel>
               <AlertDialogAction
                 onClick={() => {
-                  addToMyCountries(country);
+                  addToMyCountries(country!);
                 }}
               >
                 Delegate
